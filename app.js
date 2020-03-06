@@ -77,7 +77,6 @@ fastify.route({
     },
     handler: function (request, reply) {
         linkPreview(request.query.url).then(response => {
-            console.log(response)
             reply.send({
                 linkPreviewData: response
             })
